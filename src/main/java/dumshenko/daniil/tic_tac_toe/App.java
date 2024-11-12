@@ -1,9 +1,18 @@
 package dumshenko.daniil.tic_tac_toe;
 
-import static dumshenko.daniil.tic_tac_toe.Board.printBoard;
-
 public class App {
     public static void main(String[] args) {
-        printBoard();
+
+        NewBoard board = new NewBoard(3, 3);
+
+        board.init();
+
+        board.print();
+
+        board.setX(1, 1);
+        board.setO(0, 0);
+        board.setX(2, 1);
+
+        board.print();
     }
 }
